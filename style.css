@@ -297,7 +297,7 @@ header a.active{
     display: flex;
 }
 .about-img{
-    background: url(images/about.jpg);
+    background: url(images/a2.jpg);
     width: 2500px;
     height: 500px;
     background-size: cover;
@@ -305,7 +305,6 @@ header a.active{
 }
 .about-cont{
     padding-left: 50px;
-    padding-top: 8%;
 }
 .about-cont h1{
     font-size: 42px;
