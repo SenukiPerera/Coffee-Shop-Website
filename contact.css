@@ -1,0 +1,268 @@
+.contact-hero{
+    padding-top: 10%;
+    background:url(images/cbg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+.contact-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 550px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.contact-content{
+    position: relative;
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20%;
+    font-size: 70px;
+}
+.contact-container{
+    display: flex;
+    padding: 80px 5%;
+    color: white;
+}
+.contact-cont{
+    padding-right: 50px;
+    padding-top: 5%;
+    text-align: left;
+}
+.contact-cont h4{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,0.3fr);
+    align-items: center;
+    color: #c59764;
+}
+.contact-cont h4::after{
+    content: "";
+    display: block;
+    background-color: #c59764;
+    top: 50%;
+    height: 2px;
+}
+.contact-cont h1{
+    font-size: 60px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.contact-cont h3{
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+.contact-cont h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+.contactimg{
+    background: url(images/c1.jpg);
+    width: 2000px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.details{
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.details i{
+    font-size: 24px;
+    color: #c59764;
+}
+.details a{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+.details a:hover{
+    color: #c59764;
+}
+.map{
+    padding-top: 2%;
+}
+.map button{
+    color: white;
+    border: 1px solid white;
+    transition: 0.4s all ease-in-out 0s;
+    cursor: pointer;
+    position: relative;
+    height: 40px;
+    width: 250px;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+}
+.map .btn:hover{
+    background-color:#ffff;
+    border: 1px solid white;
+    color: black;
+}
+.data-container{
+    color: #ffff;
+    padding: 20px 5%;
+    display: flex;
+}
+.touch{
+    width: 2000px;
+}
+.touch h4{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,0.3fr);
+    align-items: center;
+    color: #c59764;
+}
+.touch h4::after{
+    content: "";
+    display: block;
+    background-color: #c59764;
+    top: 50%;
+    height: 2px;
+}
+.touch h1{
+    font-size: 60px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.touch h3{
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.touch a{
+    text-decoration: none;
+    color: white;
+}
+.touch a:hover{
+    color: #c59764;
+}
+.time{
+    color: #c59764;
+}
+.msgform{
+    color: #ffff;
+    width: 2000px;
+    padding-left: 3%;
+}
+.msgform form{
+    background: transparent;
+}
+.inputs{
+    display: block;
+}
+.input-row{
+    display: flex;
+}
+.input-row .input-group{
+    display: block;
+    flex-basis: 50%;
+}
+.input-group, .input-area{
+    margin-left: 10px;
+    margin-bottom:10px;
+}
+.input-group input{
+    width: 100%;
+    margin-top: 5px;
+    background: transparent;
+    border-bottom: 1px solid #c59764;
+    color: #ffff;
+}
+.input-col{
+    display: block;
+}
+.input-area input, .input-area textarea{
+    width: 100%;
+    margin-top: 5px;
+    background: transparent;
+    border-bottom: 1px solid #c59764;
+    color: #ffff;
+}
+.input-area textarea{
+    outline-color: black;
+    resize: none;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+.send{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.send button{
+    color: white;
+    border: 1px solid #c59764;
+    transition: 0.4s all ease-in-out 0s;
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    width: 100px;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+    background: #c59764;
+    font-family: 'Montserrat', sans-serif;
+}
+.send button:hover{
+    background-color:#ffff;
+    border: 1px solid white;
+    color: black;
+}
+
+@media (max-width:768px){
+    .contact-content{
+        padding: 50px 10%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-content h1{
+        font-size: 64px;
+    }
+    .contact-container{
+        display: grid;
+        width: 400px;
+    }
+    .contact-cont{
+        padding-right: 10px;
+        padding-top: 20px;
+        width: 450px;
+    }
+    .contactimg{
+        margin-top: 20px;
+        width: 430px;
+        height: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .data-container{
+        display: grid;
+        width: 400px;
+    }
+    .touch{
+        padding-right: 10px;
+        padding-top: 20px;
+        width: 450px;
+    }
+    .msgform{
+        padding-right: 20px;
+        padding-top: 40px;
+        width: 450px;
+        padding-left: 0px;
+    }
+}

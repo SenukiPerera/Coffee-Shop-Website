@@ -2,6 +2,7 @@
     <head>
         <title>Coffee Shop</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="menu.css">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,10 +20,10 @@
                 <i class="uil uil-times" id="close-icon"></i>
             </label>
                 <nav class="navbar">
-                    <a href="landing.html" class="active">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="menu.html">Menu</a>
+                    <a href="landing.html">Home</a>
+                    <a href="about.html" >About</a>
+                    <a href="gallery.html" >Gallery</a>
+                    <a href="menu.html" class="active">Menu</a>
                     <a href="contact.html">Contact</a>
                 </nav>
                 <div class="reservation">
@@ -31,24 +32,29 @@
         </header>
         <!--nav bar end-->
         <!--hero section-->
-        <section class="hero">
-            <div class="hero-content">
-                <p>COFFEE HOUSE</p> <br>
-                <h1>TODAY'S GOOD MOOD IS SPONSORED BY COFFEE</h1>
-            </div>
-            <div class="hero-buttons">
-                <button class="oderbtn">Oder Now</button>
+        <section class="menu-hero">
+            <div class="menu-content">
+                <h1>OUR MENU</h1>
             </div>
         </section>
         <!--hero section end-->
-        <!--flavours-->
-        <section class="flavours">
-            <h1>Choose Your <span>Perfect Coffee</span></h1> <br>
+        <!--drinks-->
+        <section class="drinks">
             <div class="main-flav">
-                <div class="flav-img">
-                    <img src="images/hero3.jpg" alt="">
+                <div class="drinks-photos">
+                    <div class="drink-collage">
+                        <img src="images/coffee.jpg" alt="">
+                        <img src="images/d2.jpg" alt="">
+                        <img src="images/d3.jpg" alt="">
+                    </div>
+                    <div class="drink-collage">
+                        <img src="images/d4.jpg" alt="">
+                        <img src="images/d5.jpg" alt="">
+                        <img src="images/d6.jpg" alt="">
+                    </div>
                 </div>
-                <div class="flav-cont">
+                <div class="menu-cont">
+                    <h3>BEST DRINKS</h3> <br> <br>
                     <div class="menu">
                         <h5 class="menu-title">Coffee <span class="menu-price">$2</span></h5>
                         <p>5-10 Calories</p>
@@ -76,72 +82,42 @@
                 </div>
             </div>
         </section>
-        <!--flavours end-->
+        <!--drinks end-->
         <!--bakery-->
-        <section class="bakery">
-            <h1>WE ALSO HAVE <span>BAKERY ITEMS</span></h1> <br>
-            <div class="bakery-container">
-                <div class="wrapper">
-                    <i id="left" class="uil uil-angle-double-left"></i>
-                    <div class="carousel">
-                      <img src="images/f1.jpg" alt="img" draggable="false">
-                      <img src="images/f3.jpg" alt="img" draggable="false">
-                      <img src="images/f4.jpg" alt="img" draggable="false">
-                      <img src="images/f5.jpg" alt="img" draggable="false">
-                      <img src="images/f6.jpg" alt="img" draggable="false">
-                      <img src="images/f7.jpg" alt="img" draggable="false">
-                    </div>
-                    <i id="right" class="uil uil-angle-double-right"></i>
+        <section class="bakeries">
+            <div class="food">
+                <h3>DELICIOUS FOOD</h3> <br> <br>
+            </div>
+            <div class="bakery-menu">
+                <div class="bakery-item">
+                    <img src="images/f1.jpg" alt="">
+                    <h5 class="menu-title">Breakfast Sandwich <span class="menu-price">$4.25</span></h5>
+                </div>
+                <div class="bakery-item">
+                    <img src="images/f3.jpg" alt="">
+                    <h5 class="menu-title">Croissant Bun <span class="menu-price">$3.75</span></h5>
+                </div>
+                <div class="bakery-item">
+                    <img src="images/f4.jpg" alt="">
+                    <h5 class="menu-title">Sausage Sandwich <span class="menu-price">$4.25</span></h5>
                 </div>
             </div>
-            <div class="hero-buttons">
-                <a href="menu.html"><button class="menubtn">View Full Menu</button></a>
+            <div class="bakery-menu">
+                <div class="bakery-item">
+                    <img src="images/f5.jpg" alt="">
+                    <h5 class="menu-title">Iced Lemon Pound Cake <span class="menu-price">$2.45</span></h5>
+                </div>
+                <div class="bakery-item">
+                    <img src="images/f6.jpg" alt="">
+                    <h5 class="menu-title">Chilli Turkey Sandwich <span class="menu-price">$4.75</span></h5>
+                </div>
+                <div class="bakery-item">
+                    <img src="images/f7.jpg" alt="">
+                    <h5 class="menu-title">Blueberry Waffles <span class="menu-price">$4.95</span></h5>
+                </div>
             </div>
         </section>
         <!--bakery end-->
-        <!--about-->
-        <section class="home-about">
-            <div class="about-container">
-                <div class="about-img">
-                </div>
-                <div class="about-cont">
-                    <p>HEY! WELCOME TO COFFEE HOUSE CAFE ...</p> <br>
-                    <h1>OUR <span>STORY</span></h1>
-                    <h3>Delicious Food. <br>To Fit Your Lifestyle.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <br> <br> 
-                    <h4>Since 2016</h4> <br>
-                    <div class="discover">
-                        <a href="about.html"><button class="btn">Discover More</button></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--about end-->
-        <!--gallery-->
-        <section class="home-gallery">
-            <h1>Our <span>Gallery</span></h1> <br> <br>
-            <div class="photo-collage">
-                <img src="images/img 1.jpg" alt="">
-                <img src="images/img 2.jpg" alt="">
-                <img src="images/img 3.jpg" alt="">
-            </div>
-            <div class="photo-collage">
-                <img src="images/img 4.jpg" alt="">
-                <img src="images/img 5.jpg" alt="">
-                <img src="images/img 6.jpg" alt="">
-            </div>
-            <div class="photo-collage">
-                <img src="images/img 7.jpg" alt="">
-                <img src="images/img 8.jpg" alt="">
-                <img src="images/img 9.jpg" alt="">
-            </div>
-            <div class="gallery-buttons">
-                <a href="gallery.html"><button class="gallerybtn">Visit Gallery</button></a>
-            </div>
-        </section>
-        <!--gallery end-->
         <!--news letter-->
         <section class="newsletter">
             <div class="news-content">
@@ -157,7 +133,7 @@
                 <span id="msg"></span>
             </div>
         </section>
-        <!--news letter end-->
+        <!--gallery end-->
         <!--footer-->
         <section class="footer">
             <div class="footer-container">

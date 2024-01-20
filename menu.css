@@ -1,0 +1,162 @@
+.menu-hero{
+    padding-top: 10%;
+    background:url(images/n2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+.menu-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 550px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.menu-content{
+    position: relative;
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20%;
+}
+.menu-content h1{
+    font-size: 80px;
+}
+.drinks{
+    padding: 25px 5%;
+    background-color: rgb(24, 23, 23);
+}
+.drink-collage {
+    display: grid;
+    grid-template-columns: repeat(3,0.5fr); /* Adjust column width as needed */
+    grid-gap: 10px;
+    margin: 10px;
+}
+.drink-collage img {
+    width:  150px;
+    height: 270px; /* Adjust image height as needed */
+    object-fit: cover; /* Ensure images fill the space without distortion */
+    border-radius: 5px; /* Optional rounded corners */
+}
+.drinks h3{
+    font-size:20px;
+    text-align: center;
+    color: wheat;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3,0.5fr);
+    align-items: center;
+}
+.drinks h3::before , .drinks h3::after{
+    content: "";
+    display: block;
+    background-color: #ffff;
+    top: 50%;
+    height: 2px;
+}
+.menu-cont{
+    width: 50%;
+    padding-left: 50px;
+}
+.menu{
+    color: #ffff;
+}
+.menu-cont h5{
+    font-size: 22px;
+    border-bottom: 1px dashed wheat;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.menu-cont h5 span{
+    float: right;
+}
+.menu-cont p{
+    font-size: 12px;
+}
+.bakeries{
+    padding: 25px 15%;
+    background-color: rgb(24, 23, 23);
+    color: #ffff;
+    align-items: center;
+    justify-content: center;
+}
+.bakery-menu{
+    display: flex;
+    position: relative;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.bakery-item img{
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    width: 300px;
+}
+.bakery-item h5{
+    font-size: 20px;
+    padding-top: 20px;
+}
+.bakery-item h5 span{
+    float: right;
+}
+.food{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.bakeries h3{
+    font-size:20px;
+    text-align: center;
+    color: wheat;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3,0.5fr);
+    align-items: center;
+}
+.bakeries h3::before , .bakeries h3::after{
+    content: "";
+    display: block;
+    background-color: #ffff;
+    top: 50%;
+    height: 2px;
+    text-align: justify;
+}
+
+@media (max-width:768px){
+    .menu-cont{
+        width: 90%;
+        padding: 20px 0%;
+        padding-left: 7%;
+    }
+    .drinks{
+        padding: 20px 0%;
+    }
+    .drink-collage {
+        grid-template-columns: repeat(3,0.1fr); /* Adjust column width as needed */
+        grid-gap: 10px;
+    }
+    .drink-collage img {
+        width:  130px;
+        height: 200px; /* Adjust image height as needed */
+        object-fit: cover; /* Ensure images fill the space without distortion */
+        border-radius: 5px; /* Optional rounded corners */
+    }
+    .bakery-menu{
+        display: grid;
+    }
+    .bakery-item{
+        padding: 20px 0%;
+    }
+    .bakery-item h5 span{
+        float: right;
+    }
+    .bakery-item img{
+        width: 330px;
+    }
+}

@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(24, 23, 23);
+}
+.banner{
+    background-color: rgb(24, 23, 23);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 3%;
+}
+.card-container{
+    display: flex;
+    padding: 20px 20%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.card-img{
+    background: url(images/ha2.jpg);
+    width: 2500px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form{
+    color: #ffff;
+    width: 2000px;
+    height: 500px;
+    background-color: black;
+    padding-top: 5%;
+}
+.container{
+    padding-top: 20%;
+}
+.form span{
+    float: right;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.form span{
+    color: wheat;
+    font-size: 15px;
+    cursor: pointer;
+    padding-top: 15%;
+}
+.form-text select, .form-text input{
+    width: 80%;
+    height: 30px;
+    margin: 10px;
+    color: #ffff;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid #ffff;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+.form-text select:hover option{
+    color: white;
+    background-color: black;
+}
+input[type="text"]::-webkit-input-placeholder{
+    color: #ffff;
+}
+.container p{
+    color: #c59764;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.container h1{
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+.book{
+    padding-top: 30px;
+}
+.book button{
+    width: 150px;
+    height: 30px;
+    background-color: #c59764;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.book button:hover{
+    color: black;
+    background-color: #ffff;
+}
+
+@media (max-width:768px){
+    .banner{
+        padding-top: 0;
+        padding-left: 9%;
+    }
+    .card-container{
+        display: grid;
+        width: 400px;
+        padding: 20px 5%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-img{
+        background: url(images/ha2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 600px;
+    }
+    .form{
+        padding-top: 10px;
+        width: 400px;
+    }
+}
